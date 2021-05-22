@@ -1,5 +1,7 @@
 # My-blog-website
 
-This is a personal website made from a heart. 
-In this website You will fined the bitter truth about this world, go and checkit it out. 
+This is my personal blog website made of HTML and CSS.
+This project is one of udacity's Frontend developer Nano degree program assignments
+It is a very personal website made purely from a heart and a soul. 
+On this website, You will find the bitter truth about this world, go and check it out.
 
