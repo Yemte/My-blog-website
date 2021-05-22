@@ -1,0 +1,13 @@
+/*add background color and font family to the body*/
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color:aliceblue;
+}
+/**add font family ,text-decoration- to h1,h2,h3,h4 and align text at the centerline*/
+h1,h2,h3,h4{
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+   text-decoration-line:underline;
+}

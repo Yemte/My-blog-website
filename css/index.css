@@ -1,0 +1,115 @@
+/*import external css files*/
+@import "header.css";
+@import "footer.css";
+@import "body.css";
+@import "blog-post.css";
+@import "contact.css";
+
+ /*  add grid, set the coulmns and rows ,add background color and full width to the main container*/
+.container{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr;
+     /* The grid areas   of the main container when the screen width is up to 600px*/
+    grid-template-areas: "hd"    /*header on the first row*/
+    "cont"            /*content at the next  row*/
+    "ft";              /* footer on the last row*/
+    width:100%;
+}
+   /*add padding to the slogan*/ 
+#slogan{
+  
+  padding: 30px;
+}
+/* adding  font family to the slogan section h1 */
+#slogan h1{
+  font-family: 'Dancing Script', cursive;
+  text-decoration-line: none;
+}
+/* add grid area and background color for content section */
+#mainContainer{
+  grid-area: cont;
+  text-align: center;
+  background-color:lightgray;
+}
+/*adding back ground color to the top section of the content with full width nd text at the center*/
+#top {
+  background-color:lightgray;
+  width: 100%;
+  text-align: center;
+  
+}
+/*adding font family to top section h1*/
+#top h1{
+  font-family: 'Dancing Script', cursive;
+  text-decoration-line: none;
+}
+/*add height width and padding to the navigation bar*/
+.navbar{
+  
+  height: 50px;
+  width: 100%;
+  padding-top: 20px;
+}
+/*make  the first line of the slogan  text color green*/
+.gr{
+  color: green;
+}
+/*make  the first line of the slogan  text color yello*/
+.yl{
+  color: yellow;
+}
+/*make  the first line of the slogan  text color red*/
+.rd{
+  color: red;
+}
+/*add width heigh border-radius to the logo image*/
+.header img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  float: center;
+}
+/* add flex display,back ground colo flex-flow on the content container*/
+.flex-container{
+  background-color: aliceblue;
+  display: flex;
+  flex-flow: row wrap; /*wrap the items in a row*/
+  justify-content: space-around;
+  padding-bottom: 10px;
+  
+}
+/*add background colo,height,width,padding and margine to the images*/
+.imgs{
+  background-color: lightgray;
+  transition: 0.2s;
+  width: 255px;
+  height: 255px;
+  padding: 10px;
+  margin: 40px;   
+}
+/* When moving the mouse over the images, make the images bigger by 1.25 scale */
+.imgs:hover{
+  transform: scale(1.25);
+}
+
+/* add font size and color for the  titles for each image*/
+.post-title{
+  float: none;
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+/*add horizontal line under each  title of the image*/
+.hr-line{
+  size: 2;
+  background-color: white;
+  width : 40%;
+}
+
+
+
+

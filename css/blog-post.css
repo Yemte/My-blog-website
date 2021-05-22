@@ -1,0 +1,92 @@
+ /*  add grid, set the coulmns and rows ,add background colour and full width to the main container*/
+.blog-Container{
+    background-color: white;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr;
+    width:100%;/*full width*/
+    /* The grid areas   of the main container when the screen width is up to 600px*/
+    grid-template-areas: "hd"/*header on the first row*/
+    "cont" /*the conten or the main blog post on the second row*/
+    "lsid "/*left side bar below the blog post*/
+    "rsid"/*right side bar below the left side bar*/
+    "ft";/*footer at the bottom of the page*/
+    
+  }
+/*add back ground color and padding for the navigator*/
+#blog-nav{
+    background-color: lightgrey;
+    padding-top: 20px;
+  }
+/*add grid area and margin for the blog conten container */
+.content-container{
+    grid-area: cont;
+    margin: 20px;
+ }
+/* add width ,height and margin for the blog image and places the it at the left of the container*/  
+.content img{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin:10px;
+}
+/* add some padding for the blog post ordered lists*/
+.orderd-list{
+    padding: 20px;
+}
+
+/*add margine for  section*/
+.about{
+    margin: 10px;
+}
+/*alighm the text to the left in the about section*/
+.about p{
+    text-align: left;
+}
+/*Add a box with a black border and light gray back ground to h3 text and align the text to the
+left of the border in the about section */
+.about h3{
+    border:  2px solid black;
+    background-color: lightgrey;
+    text-align: left;
+    text-decoration-line: none;
+}
+/*Add grid area and padding to the left side bar*/
+.sidebar-l{
+    grid-area: lsid;
+    padding: 20px;
+    padding-bottom: 0;
+}
+/*Add margin for the subscribe section*/
+.subscribe{
+    margin: 60px;
+  
+}
+/*Add grid area and padding to the rightt side bar*/
+.sidebar-r{
+    grid-area: rsid;
+    padding: 20px;
+}
+/*Add background color to the side bars and full length*/
+.box{
+    background-color:aliceblue;
+    height: 100%;
+    text-align: center;
+}
+/*Add margine to the back button*/
+.back{
+    margin:100px;
+}
+
+ /* Change the grid areas,the columns and rows  of the main container when the screen width is above 600px*/
+@media (min-width : 600px){
+  .blog-Container{
+    grid-template-columns:auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "hd hd hd hd hd"/*header at the top*/
+    "lsid cont cont cont rsid"/*left saide bar, blog-post and right side bar at the middle of the container*/
+    "ft ft ft ft ft";/*footer at the bottom*/
+  }
+
+}
+  

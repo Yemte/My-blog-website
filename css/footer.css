@@ -1,0 +1,11 @@
+/*add grid area,background color ,height, padding,text color and font size to the footer*/
+.footer{
+  grid-area: ft;
+  background-color:lightgray;
+  text-align: center;
+  height: 30px;
+  padding-top: 30px;
+  font-size: 0.75rem;
+  color: black;
+  
+}
